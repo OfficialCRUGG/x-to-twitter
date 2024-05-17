@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "X to Twitter",
+  "description": "Reverts x.com links to twitter.com",
+  "version": "1.0",
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["urlfixer.js"],
+      "matches": ["https://x.com/*"]
+    }
+  ]
+}
